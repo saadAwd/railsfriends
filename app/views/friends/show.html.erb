@@ -1,0 +1,31 @@
+
+
+
+
+
+<div class="bg-light p-5 rounded-lg m-3">
+  <h1 class="display-5">
+  <%= @friend.First_name %>
+  <%= @friend.Last_name %>
+  </h1>
+  <p class="lead">
+    <p>
+  <strong>Phone:</strong>
+  <%= @friend.Phone %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @friend.Email %>
+</p>
+
+<p>
+  <strong>Twitter:</strong>
+  <%= @friend.Twitter %>
+</p></p>
+  <hr class="my-4">
+  <p>
+    <%= link_to 'Edit', edit_friend_path(@friend), class:"btn btn-secondary" %> |
+<%= link_to 'Back', friends_path, class:"btn btn-secondary" %>
+</div>
+
